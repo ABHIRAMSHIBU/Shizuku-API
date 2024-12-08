@@ -11,7 +11,7 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
     buildFeatures {
-        buildConfig false
+        buildConfig = false
     }
     buildTypes {
         debug {
@@ -39,4 +39,10 @@ ext {
     publishLibrary = true
     POM_NAME = "Shizuku API - API"
     POM_DESCRIPTION = "API of Shizuku and Sui."
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }

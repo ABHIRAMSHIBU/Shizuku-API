@@ -1,4 +1,10 @@
 apply plugin: 'java-library'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
